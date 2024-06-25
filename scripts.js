@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
             const card = document.createElement('div');
             card.className = 'card'; // Adiciona a classe Bootstrap para o card
             card.innerHTML = `
-                <img src="Informática.png" class="card-img-top" alt="${repo.name}">
+                <img src="caminho/para/sua/imagem.jpg" class="card-img-top img-fluid" alt="Imagem do card" onerror="this.src='https://via.placeholder.com/300x200.png?text=Imagem+Indisponível'; this.alt='Imagem Indisponível';">
                 <div class="card-body">
                     <h5 class="card-title">${repo.name}</h5>
                     <div class="d-flex justify-content-between">

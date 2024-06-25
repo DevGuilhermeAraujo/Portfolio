@@ -25,6 +25,11 @@
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <!-- Botão para baixar currículo -->
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-download" href="Currículo.pdf" download>Baixar
+                            Currículo</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto social-icons">
                     <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/seu-perfil"
@@ -43,7 +48,8 @@
         <div class="container text-center text-md-left">
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <img src="Informática.png" alt="Sua Foto" class="img-fluid rounded-circle">
+                    <img src="caminho/para/sua/imagem.jpg" class="img-fluid rounded-circle" alt="Imagem do card"
+                        onerror="this.src='https://via.placeholder.com/300x200.png?text=Imagem+Indisponível'; this.alt='Imagem Indisponível';">
                 </div>
                 <div class="col-md-8">
                     <h1 class="display-4">Olá, eu sou <span>Guiilherme Araujo Vilas Boas</span></h1>
@@ -120,13 +126,15 @@
                     <label for="message">Mensagem:</label>
                     <textarea id="message" name="message" class="form-control" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-success">Enviar</button> <!-- Alterado de btn-dark para btn-success -->
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <!-- Alterado de btn-dark para btn-success -->
             </form>
         </div>
     </section>
 
     <!-- Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
