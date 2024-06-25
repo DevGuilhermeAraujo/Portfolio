@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Combinado</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Guilherme Araujo Vilas Boas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto social-icons">
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/seu-perfil"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/seu-usuario" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/seu-usuario"
+                            target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center text-md-left">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="Informática.png" alt="Sua Foto" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Olá, eu sou <span>Guiilherme Araujo Vilas Boas</span></h1>
+                    <p class="lead">Desenvolvedor Web apaixonado por criar soluções inovadoras e eficazes. Com
+                        experiência em tecnologias front-end e back-end, estou sempre buscando aprender e crescer
+                        profissionalmente.</p>
+                    <a href="#projects" class="btn btn-primary btn-lg">Veja meus projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Meu nome é Guilherme Araujo Vilas Boas, tenho 22 anos, nascido em 2002. Atualmente, estou
+                        cursando Sistemas de Informação na Uniube. Sou um desenvolvedor dedicado e apaixonado por
+                        tecnologia, sempre em busca de novos desafios e aprendizados.</p>
+                    <p>Possuo conhecimento em diversas linguagens de programação, incluindo:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>C</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p>Além disso, tenho experiência com bancos de dados como:</p>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Oracle</li>
+                    </ul>
+                    <p>Já realizei diversos trabalhos utilizando a plataforma WordPress, desenvolvendo sites
+                        funcionais
+                        e personalizados para atender às necessidades dos clientes.</p>
+                    <p>Estou sempre em busca de oportunidades para aplicar meus conhecimentos e contribuir para
+                        projetos
+                        inovadores e desafiadores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="py-5">
+        <div class="container containerProjects">
+            <h2 class="text-center mb-4">Projetos</h2>
+            <div class="row rowProject">
+                <!-- Os cards de projetos serão gerados dinamicamente aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button> <!-- Alterado de btn-dark para btn-success -->
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Título do Projeto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Descrição completa do projeto...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Guilherme Araujo Vilas Boas. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="scrp.js"></script>
+</body>
+
+</html>
