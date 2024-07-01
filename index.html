@@ -98,13 +98,43 @@
             </div>
         </div>
     </section>
-
     <!-- Projetos -->
     <section id="projects" class="py-5">
         <div class="container containerProjects">
             <h2 class="text-center mb-4">Projetos</h2>
             <div class="row rowProject">
                 <!-- Os cards de projetos serão gerados dinamicamente aqui -->
+            </div>
+        </div>
+    </section>
+    <!-- Nova seção para o gráfico de contribuições -->
+    <section id="contributions" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Gráfico de Contribuições no GitHub</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <canvas id="contributionsChart" width="800" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certificações -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Certificações e Cursos</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Certificação 1</h3>
+                            <p class="card-text">Descrição da certificação ou curso.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais certificações ou cursos conforme necessário -->
             </div>
         </div>
     </section>
@@ -162,8 +192,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
-    <script src="scrp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="BackEnd/scripts.js"></script>
 </body>
 
 </html>

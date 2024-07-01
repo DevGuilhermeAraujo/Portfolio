@@ -268,3 +268,33 @@ footer {
     text-align: center;
     padding: 3rem 0;
 }
+
+#linkedin {
+    background: #f8f9fa;
+    color: #333;
+    padding: 3rem 0;
+}
+
+#linkedin h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#linkedin p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#linkedin .btn-primary {
+    background-color: #0077b5;
+    border-color: #0077b5;
+}
+
+#linkedin .btn-primary:hover {
+    background-color: #005582;
+    border-color: #004266;
+}
+
+#linkedin .fab {
+    margin-right: 10px;
+}
