@@ -261,6 +261,64 @@ header {
     border-color: #1e7e34;
 }
 
+/* Estilos para o botão de filtro */
+#languageFilter {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#languageFilter:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+#languageFilter:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+
+/* styles.css */
+
+/* Estiliza os ícones de linguagem */
+/* Estiliza os ícones de linguagem */
+.language-icon {
+    width: 40px; /* Ajusta o tamanho do ícone */
+    height: 40px; /* Ajusta o tamanho do ícone */
+    border: 2px solid var(--primary-color); /* Esta cor será sobrescrita pelo estilo inline */
+    border-radius: 50%;
+    padding: 2px;
+    background-color: transparent;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Adiciona transição para a cor da borda */
+}
+
+/* Adiciona um efeito de hover para destacar o ícone */
+.language-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--primary-color); /* Este efeito também será afetado pelo estilo inline */
+    border-color: var(--language-color); /* Muda a cor da borda ao passar o mouse */
+}
+
+/* Estiliza o nome da linguagem */
+.language-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+/* Adiciona um efeito de hover para o nome da linguagem */
+.language-name:hover {
+    color: var(--language-color); /* Altera a cor para combinar com a cor do ícone */
+}
+
+
 /* Footer */
 footer {
     background: var(--bg-color);
