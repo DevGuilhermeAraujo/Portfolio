@@ -114,9 +114,10 @@ const createRepoCards = (repos) => {
         card.className = 'card';
         const languageIcon = repo.language && languageIcons[repo.language] ? languageIcons[repo.language] : 'https://via.placeholder.com/20';
         const languageColor = getLanguageColor(repo.language);
+        console.log(repo)
 
         card.innerHTML = `
-            <img src="caminho/para/sua/imagem.jpg" class="card-img-top img-fluid" alt="Imagem do card" onerror="this.src='https://via.placeholder.com/300x200.png?text=Imagem+Indisponível'; this.alt='Imagem Indisponível';">
+            <img src="" class="card-img-top img-fluid" alt="Imagem do card" onerror="this.src='https://via.placeholder.com/300x200.png?text=Imagem+Indisponível'; this.alt='Imagem Indisponível';">
             <div class="card-body">
                 <h5 class="card-title">${repo.name}</h5>
                 <div class="d-flex justify-content-between">
